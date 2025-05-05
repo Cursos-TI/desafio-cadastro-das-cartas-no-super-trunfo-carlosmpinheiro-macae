@@ -19,7 +19,7 @@ int main() {
     float area1;
     float pib1;
     int pontos_turisticos1;
-    float dencidade_populacao1;
+    float densidade_populacao1;
     float pib_precapita1;
   
 
@@ -33,7 +33,7 @@ int main() {
     float area2;
     float pib2;
     int pontos_turisticos2;
-    float dencidade_populacao2;
+    float densidade_populacao2;
     float pib_precapita2;
 
     
@@ -92,12 +92,12 @@ int main() {
     printf("Pontos turísticos: %d\n", pontos_turisticos1);
 
      //calculo par densidade populacional
-     dencidade_populacao1 = (float) populacao1/area1;
-     printf("Densidade populacional: %.2f \n", dencidade_populacao1);
+     densidade_populacao1 = (float) populacao1/area1;
+     printf("Densidade populacional: %.2f \n", densidade_populacao1);
  
      //calculo para pib per capita
-     pib_precapita1 =  pib1 / populacao1;
-     printf("PIB per capita: %f \n", pib_precapita1);
+     pib_precapita1 = (float) (pib1 *1000000000) / populacao1;
+     printf("PIB per capita: %.2f \n", pib_precapita1);
     
 
     // Exibição dos dados da carta 2
@@ -111,11 +111,11 @@ int main() {
     printf("Pontos turísticos: %d\n", pontos_turisticos2);
    
     //calculo par densidade populacional
-    dencidade_populacao2 = (float) populacao2/area2;
-    printf("Densidade populacional: %.2f \n", dencidade_populacao2);
+    densidade_populacao2 = (float) populacao2/area2;
+    printf("Densidade populacional: %.2f \n", densidade_populacao2);
 
     //calculo para pib per capita
-    pib_precapita2=(float) pib2/populacao2;
+    pib_precapita2=(float) (pib2 *1000000000) / populacao2;
     printf("PIB per capita: %.2f \n",pib_precapita2);
 
 
