@@ -6,6 +6,7 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 
+
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -18,6 +19,11 @@ int main() {
     float area1;
     float pib1;
     int pontos_turisticos1;
+    float dencidade_populacao1;
+    float pib_precapita1;
+  
+
+
 
     // Declaração de variáveis para a carta 2
     char estado2[2];
@@ -27,6 +33,9 @@ int main() {
     float area2;
     float pib2;
     int pontos_turisticos2;
+    float dencidade_populacao2;
+    float pib_precapita2;
+
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -82,7 +91,16 @@ int main() {
     printf("PIB: %.2f bilhões\n", pib1);
     printf("Pontos turísticos: %d\n", pontos_turisticos1);
 
-    // Exibição dos dados da carta 2a
+     //calculo par densidade populacional
+     dencidade_populacao1 = (float) populacao1/area1;
+     printf("Densidade populacional: %.2f \n", dencidade_populacao1);
+ 
+     //calculo para pib per capita
+     pib_precapita1 =  pib1 / populacao1;
+     printf("PIB per capita: %f \n", pib_precapita1);
+    
+
+    // Exibição dos dados da carta 2
     printf("\n--- Carta 2 ---\n");
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigo2);
@@ -91,8 +109,16 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Pontos turísticos: %d\n", pontos_turisticos2);
+   
+    //calculo par densidade populacional
+    dencidade_populacao2 = (float) populacao2/area2;
+    printf("Densidade populacional: %.2f \n", dencidade_populacao2);
 
+    //calculo para pib per capita
+    pib_precapita2=(float) pib2/populacao2;
+    printf("PIB per capita: %.2f \n",pib_precapita2);
 
 
     return 0;
 }
+
